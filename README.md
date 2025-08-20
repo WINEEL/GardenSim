@@ -69,9 +69,14 @@ GardenSim/
 │   │           ├── orange.png
 │   │           └── bug.png
 │   └── test/java/                          # (empty placeholder for unit tests)
-└── imagesReadMe/                           # Optional: screenshots for README
-    ├── screenshot-1.png
-    └── screenshot-2.png
+└── imagesReadMe/                           
+    ├── image1.png
+    ├── image2.png
+    ├── image3.png
+    ├── image4.png
+    ├── image5.png
+    ├── image6.png    
+    └── image7.png
 ```
 
 
@@ -263,14 +268,15 @@ This keeps the project **platform-independent** and **one-command** to start.
 This project is open-source under the **MIT License**.  
 See `LICENSE`. Feel free to adapt and extend!
 
----
 
 ## Authors / Credits
 
 - **Team of three**
-    - [Divyanth Chalicham](https://github.com/yourhandle)
-    - [Varshit Purna Amrutham](https://github.com/yourhandle)
+    - [Divyanth Chalicham](https://github.com/Divyanth05)
+    - [Varshit Purna Amrutham](https://github.com/VarshitPurna)
     - [Wineel Wilson Dasari](https://github.com/WINEEL)
+
+---
 
 ### Project Background
 

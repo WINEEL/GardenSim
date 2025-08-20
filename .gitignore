@@ -22,6 +22,8 @@ buildNumber.properties
 *.iws
 *.iml
 *.ipr
+out/
+.run/
 
 ############################
 # Eclipse
@@ -62,7 +64,27 @@ Thumbs.db
 ############################
 *.class
 *.log
-
 # JVM crash logs
 hs_err_pid*
 replay_pid*
+
+############################
+# Common build/output dirs
+############################
+bin/
+gen/
+generated/
+
+############################
+# Logs & runtime artifacts
+############################
+garden-simulation.log
+logs/
+*.log.*
+
+############################
+# Misc
+############################
+*.swp
+*.swo
+*~

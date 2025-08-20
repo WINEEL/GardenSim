@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.Priority?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.gardensim.ViewController">
+
+    <!-- Top Toolbar -->
+    <top>
+        <VBox style="-fx-background-color: #99ec9d;"
+              alignment="CENTER" fillWidth="true" spacing="8">
+            <Label text="Welcome to the Garden Simulator"
+                   maxWidth="Infinity" alignment="CENTER" textAlignment="CENTER"
+                   style="-fx-font-size: 45px; -fx-font-weight: bold; -fx-text-fill: #000000;" />
+            <HBox prefHeight="50.0" style="-fx-background-color: #99ec9d;"
+                  spacing="20" alignment="CENTER">
+                <children>
+                    <Button fx:id="iterateDayButton" mnemonicParsing="false"
+                            onAction="#iterateDayWithTimer" text="Simulate"
+                            style="-fx-background-color: #ffffff; -fx-font-size: 14px;"/>
+                    <Button fx:id="finish" mnemonicParsing="false"
+                            onAction="#finish" text="Finish"
+                            style="-fx-background-color: #ffffff; -fx-font-size: 14px;"/>
+                </children>
+            </HBox>
+        </VBox>
+    </top>
+
+    <!-- Right Sidebar -->
+    <right>
+        <!-- Outer container -->
+        <VBox prefWidth="260.0" style="-fx-background-color: #e4f8da;"
+              spacing="18" alignment="TOP_LEFT">
+            <padding>
+                <Insets top="12" right="12" bottom="12" left="12"/>
+            </padding>
+            <children>
+
+                <!-- Weather (centered block) -->
+                <VBox alignment="CENTER" spacing="8">
+                    <Label text="Weather Condition"
+                           style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #000000;" />
+                    <ImageView fx:id="weatherImageView" fitHeight="120" fitWidth="120" preserveRatio="true" />
+                    <Label fx:id="weatherLabel" text="Sunny"
+                           style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #000000;" />
+                </VBox>
+
+                <!-- Plant Type (slight indent) -->
+                <VBox spacing="8" alignment="TOP_LEFT">
+                    <padding><Insets left="8"/></padding>
+                    <children>
+                        <Label text="Select Plant Type"
+                               style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #000000;" />
+                        <RadioButton fx:id="roseButton" text="Rose">
+                            <toggleGroup><ToggleGroup fx:id="plantType"/></toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="TomatoButton" text="Tomato" toggleGroup="$plantType"/>
+                        <RadioButton fx:id="OrangeButton" text="Orange" toggleGroup="$plantType"/>
+                    </children>
+                </VBox>
+
+                <!-- Actions (slight indent) -->
+                <VBox spacing="10" alignment="TOP_LEFT">
+                    <padding><Insets left="8"/></padding>
+                    <children>
+                        <Label text="Select the Function"
+                               style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #000000;" />
+                        <Button fx:id="heatingButton" onAction="#adjustTemperature" text="Handle Temperature"
+                                style="-fx-background-color: #ffcccb;" />
+                        <Button fx:id="sprinklersButton" onAction="#activateSprinklers" text="Activate Sprinklers"
+                                style="-fx-background-color: #b3e6ff;" />
+                        <Button fx:id="pesticideButton" onAction="#applyPesticide" text="Apply Pesticide"
+                                style="-fx-background-color: #ffeeba;" />
+                        <Button fx:id="rainButton" onAction="#activateRain" text="Rain"
+                                style="-fx-background-color: #d1f5d3;" />
+                    </children>
+                </VBox>
+
+                <!-- Logs (label + box immediately below, grows to fill) -->
+                <VBox spacing="6" alignment="TOP_LEFT" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label text="Logs :" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #000000;" />
+                        <TextArea fx:id="logArea" wrapText="true" editable="false"
+                                  maxWidth="Infinity" VBox.vgrow="ALWAYS"/>
+                    </children>
+                </VBox>
+
+            </children>
+        </VBox>
+    </right>
+
+    <!-- Center: Garden Grid -->
+    <center>
+        <GridPane fx:id="gardenGrid" gridLinesVisible="True" onMouseClicked="#plantPlants"
+                  styleClass="grid-pane">
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints vgrow="ALWAYS"/>
+                <RowConstraints vgrow="ALWAYS"/>
+                <RowConstraints vgrow="ALWAYS"/>
+                <RowConstraints vgrow="ALWAYS"/>
+                <RowConstraints vgrow="ALWAYS"/>
+                <RowConstraints vgrow="ALWAYS"/>
+                <RowConstraints vgrow="ALWAYS"/>
+            </rowConstraints>
+        </GridPane>
+    </center>
+
+    <!-- Bottom: System Info -->
+    <bottom>
+        <HBox prefHeight="50.0" style="-fx-background-color: #99ec9d;" alignment="CENTER">
+            <children>
+                <Label fx:id="userInfoLabel" style="-fx-font-size: 18px; -fx-text-fill: #000000;" />
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

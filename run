@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Usage:
+#   ./run            -> launch JavaFX GUI
+#   ./run api ...    -> run headless API (extra args passed to Maven)
+#                       e.g. ./run api -Dexec.jvmArgs="-Ddays=20 -Dpest=0.25 -DtickMs=1000"
+
+set -euo pipefail
+
+cmd="${1:-gui}"
+
+if [[ "$cmd" == "api" ]]; then
+  shift
+  mvn -q -Papi exec:java "$@"
+else
+  mvn -q -DskipTests javafx:run "$@"
+fi

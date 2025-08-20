@@ -1,0 +1,22 @@
+{
+  "plants": [
+    {
+      "name": "Rose",
+      "waterRequirement": 20,
+      "temperature": 22,
+      "parasites": ["Aphids", "Caterpillar"]
+    },
+    {
+      "name": "Tomato",
+      "waterRequirement": 18,
+      "temperature": 24,
+      "parasites": ["Hornworm", "Whitefly"]
+    },
+    {
+      "name": "Orange",
+      "waterRequirement": 22,
+      "temperature": 26,
+      "parasites": ["Aphids", "Leafminer"]
+    }
+  ]
+}

@@ -44,7 +44,6 @@ GardenSim/
 │   │   │   ├── GardenSimulatorAPI.java     # API surface; loads config.json
 │   │   │   ├── GardenController.java       # Simulation control
 │   │   │   ├── GardenThread.java           # Simulation thread/timing
-│   │   │   ├── MyTimer.java                # Timer helper
 │   │   │   ├── Plant.java
 │   │   │   ├── Rose.java
 │   │   │   ├── Tomato.java
@@ -69,7 +68,7 @@ GardenSim/
 │   │           ├── orange.png
 │   │           └── bug.png
 │   └── test/java/                          # (empty placeholder for unit tests)
-└── imagesReadMe/                           
+└── imagesReadMe/                           # For screenshots in README.md
     ├── image1.png
     ├── image2.png
     ├── image3.png
@@ -290,5 +289,4 @@ The project was graded on the **survival of the garden**, with the grader runnin
 
 > Our team achieved **full marks** (best survival).  
 
-In **2025**, the project was **cleaned up, polished, and debugged** before being published on GitHub as a showcase of both  
-a JavaFX GUI application and a headless API-based simulator.
+In **2025**, the project was **cleaned up, polished, and debugged** before being published on GitHub as a showcase of both a JavaFX GUI application and a headless API-based simulator.

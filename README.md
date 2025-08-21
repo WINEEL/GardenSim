@@ -129,7 +129,7 @@ chmod +x run
 
 > This launches the JavaFX app (`GUIMain`).
 
-<!-- <img src="imagesReadMe/image1.png" alt="GardenSim GUI - Initial Screen" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" /> -->
+<img src="imagesReadMe/image1.png" alt="GardenSim GUI - Initial Screen" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" />
 
 ### API (headless)
 - **macOS / Linux**
@@ -164,23 +164,23 @@ run api -Dexec.jvmArgs="-Ddays=20 -Dpest=0.25 -DtickMs=800"
 
 1. Click **Simulate** to start/pause the day cycle (e.g., 1 day every 10s).
 
-    <!-- <img src="imagesReadMe/image2.png" alt="GardenSim GUI - After Clicking Simulate" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" /> -->
+    <img src="imagesReadMe/image2.png" alt="GardenSim GUI - After Clicking Simulate" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" />
 
 2. Choose a plant (**Rose** *(default)* **/ Tomato / Orange**).
 
-    <!-- <img src="imagesReadMe/image3.png" alt="GardenSim GUI - Choose: Orange" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" /> -->
+    <img src="imagesReadMe/image3.png" alt="GardenSim GUI - Choose: Orange" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" />
 
 3. Click a grid cell to plant.
 
-    <!-- <img src="imagesReadMe/image4.png" alt="GardenSim GUI - Plants Orange" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" /> -->
+    <img src="imagesReadMe/image4.png" alt="GardenSim GUI - Plants Orange" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" />
 
-    <!-- <img src="imagesReadMe/image5.png" alt="GardenSim GUI - Plants Tomato" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" /> -->
+    <img src="imagesReadMe/image5.png" alt="GardenSim GUI - Plants Tomato" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" />
 
-    <!-- <img src="imagesReadMe/image6.png" alt="GardenSim GUI - Plants Rose" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" /> -->
+    <img src="imagesReadMe/image6.png" alt="GardenSim GUI - Plants Rose" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" />
 
 4. Use **Rain**, **Sprinklers**, **Apply Pesticide**, and **Handle Temperature**.
 
-    <!-- <img src="imagesReadMe/image7.png" alt="GardenSim GUI - Pest and Rain" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" /> -->
+    <img src="imagesReadMe/image7.png" alt="GardenSim GUI - Pest and Rain" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" />
 
 5. Watch the **Logs** panel (and `garden-simulation.log`) for events.
 

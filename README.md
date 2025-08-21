@@ -68,6 +68,10 @@ GardenSim/
 │   │           ├── orange.png
 │   │           └── bug.png
 │   └── test/java/                          # (empty placeholder for unit tests)
+├── docs/                                   # Project report and slides.
+│   ├── Report.pdf
+│   ├── Slides.pdf
+│   └── Slides.pptx
 └── imagesReadMe/                           # For screenshots in README.md
     ├── image1.png
     ├── image2.png
@@ -308,6 +312,8 @@ The Garden Simulator project (a **Computerized Garden**) was built in Java and J
 It featured management of **weather effects, plants, pests, seasons, logs (date/time), and sprinkler sensors**.  
 
 The project was graded on the **survival of the garden**, with the grader running the simulation via the API to test its sustainability.
+
+See `docs/` for the original course report and presentation used in submission.
 
 > Our team achieved **full marks** (best survival).  
 

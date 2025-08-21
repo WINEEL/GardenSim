@@ -285,8 +285,9 @@ This keeps the project **platform-independent** and **one-command** to start.
 
 ## License
 
-This project is open-source under the **[MIT License](LICENCE)**.  
-See `LICENSE`. Feel free to adapt and extend!
+This project is open-source under the MIT License. 
+
+See **[LICENSE](LICENSE)**. Feel free to adapt and extend!
 
 
 ## Authors / Credits

@@ -162,7 +162,7 @@ run api -Dexec.jvmArgs="-Ddays=20 -Dpest=0.25 -DtickMs=800"
 
     <img src="imagesReadMe/image2.png" alt="GardenSim GUI - After Clicking Simulate" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" />
 
-2. Choose a plant (**Rose**(default) **/ Tomato / Orange**).
+2. Choose a plant (**Rose** *(default)* **/ Tomato / Orange**).
 
     <img src="imagesReadMe/image3.png" alt="GardenSim GUI - Choose: Orange" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3);" />
 
@@ -199,6 +199,27 @@ mvn -q -Papi exec:java
 ```
 
 > A fat/uber JAR is **not** provided by default because JavaFX apps typically run with the Maven JavaFX plugin. Use the **run scripts** or the **Maven commands** above.
+
+
+## Build & Run with Maven Wrapper
+
+If you don’t have Maven installed globally, you can use the provided **Maven Wrapper** scripts (`mvnw`, `mvnw.cmd`, `.mvn/wrapper/`).
+
+This ensures the correct Maven version is downloaded automatically.
+- **macOS/Linux**
+  ```bash
+  ./mvnw clean javafx:run
+  ```
+
+- **Windows**
+  ```bat
+  mvnw.cmd clean javafx:run
+  ```
+
+- **You can also package the project:**
+  ```
+  ./mvnw -q -DskipTests package
+  ```
 
 
 ## `config.json` (for API mode)
@@ -250,21 +271,21 @@ Here’s a **recommended** minimal example (aligns with the GUI options):
   Make the window larger. The grid uses equal-percentage rows/columns and scales cleanly.
 
 
-## Why these run scripts?
+## Why these `run` scripts?
 
 Typing long Maven commands gets old.  
 
 We provide:
 - `run` (macOS/Linux) and `run.bat` (Windows)
-    - **`run`** → JavaFX GUI
-    - **`run api`** → headless API via Maven exec profile
+    - **`run`** &rarr; JavaFX GUI
+    - **`run api`** &rarr; headless API via Maven exec profile
 
 This keeps the project **platform-independent** and **one-command** to start.
 
 
 ## License
 
-This project is open-source under the **MIT License**.  
+This project is open-source under the **[MIT License](LICENCE)**.  
 See `LICENSE`. Feel free to adapt and extend!
 
 
